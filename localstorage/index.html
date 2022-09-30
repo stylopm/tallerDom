@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto dos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Lista de usuarios</h1>
+            <h3>Versión 3</h3>
+            <form class="row g-3">
+                <div class="col-auto">
+                    <label for="nameUser" class="visually-hidden">Nombre</label>
+                    <input type="text" class="form-control" id="nameUser" placeholder="Nombre">
+                    <input type="hidden" id="position">
+                </div>
+                <div class="col-auto">
+                    <label for="age" class="visually-hidden">Edad</label>
+                    <input type="number" class="form-control" id="age" placeholder="Edad">
+                </div>
+                <div class="col-auto">
+                    <button type="button" class="btn btn-success mb-3" onclick="agregarRegistro()">Agregar</button>
+                    <button type="button" class="btn btn-primary mb-3"
+                        onclick="actualizarRegistro()">Actualizar</button>
+                    <button type="button" class="btn btn-info mb-3"
+                    onclick="clearCache()">Limpiar Cache</button>
+                    <button type="button" class="btn btn-warning mb-3" onclick="mostrarAlumnos()">Actualizar registros</button>
+                </div>
+            </form>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./js/script/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
